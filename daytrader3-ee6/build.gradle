@@ -52,7 +52,7 @@ task fvt(type: Test, dependsOn: installApps) {
     systemProperties = ['liberty.test.port': getHttpPort()]
     dependsOn libertyStart
  //vidya   finalizedBy libertyStop
- //   finalizedBy libertyStop
+    finalizedBy libertyStop
     // If libertyRoot is not set, automatically download & install Liberty runtime
 }
 
