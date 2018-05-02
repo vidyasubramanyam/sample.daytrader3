@@ -50,6 +50,9 @@ task fvt(type: Test, dependsOn: installApps) {
     include '**/fvt/**'
     exclude '**/unit/**'
     systemProperties = ['liberty.test.port': getHttpPort()]
+    println "vidya - libertyStart"
+    sleep 10
+    println "vidya - after sleep"
     dependsOn libertyStart
  //vidya   finalizedBy libertyStop
     finalizedBy libertyStop
