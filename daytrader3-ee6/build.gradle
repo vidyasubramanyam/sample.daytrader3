@@ -49,7 +49,7 @@ task fvt(type: Test, dependsOn: installApps) {
     reports.junitXml.destination = file("$buildDir/test-results/fvt")
     include '**/fvt/**'
     exclude '**/unit/**'
-    systemProperties = ['liberty.test.port': getHttpPort()]
+    //vidya systemProperties = ['liberty.test.port': getHttpPort()]
     dependsOn libertyStart
  //vidya   finalizedBy libertyStop
     finalizedBy libertyStop
