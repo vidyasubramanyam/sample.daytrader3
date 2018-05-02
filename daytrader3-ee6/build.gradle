@@ -53,7 +53,7 @@ task fvt(type: Test, dependsOn: installApps) {
     println "vidya - libertyStart"
     dependsOn libertyStart
     println "vidya - after libertyStart"
-    sleep 10000000
+    sleep 1000
     println "vidya - after sleep"
  //vidya   finalizedBy libertyStop
     finalizedBy libertyStop
