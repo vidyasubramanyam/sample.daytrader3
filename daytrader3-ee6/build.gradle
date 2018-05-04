@@ -51,12 +51,12 @@ task fvt(type: Test, dependsOn: installApps) {
     exclude '**/unit/**'
     systemProperties = ['liberty.test.port': getHttpPort()]
     println "vidya - libertyStart"
-    //dependsOn libertyStart
+    dependsOn libertyStart
     println "vidya - after libertyStart"
     sleep 1000
     println "vidya - after sleep"
  //vidya   finalizedBy libertyStop
-    //finalizedBy libertyStop
+    finalizedBy libertyStop
     // If libertyRoot is not set, automatically download & install Liberty runtime
 }
 
