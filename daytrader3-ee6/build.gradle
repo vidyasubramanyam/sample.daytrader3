@@ -57,7 +57,7 @@ task fvt(type: Test, dependsOn: installApps) {
     sleep 1000
     println "vidya - after sleep"
  //vidya   finalizedBy libertyStop
-    finalizedBy libertyStop
+    //finalizedBy libertyStop
     // If libertyRoot is not set, automatically download & install Liberty runtime
 }
 
